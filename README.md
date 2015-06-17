@@ -3,6 +3,8 @@ Notes on browser rendering optimization and hitting 60fps smoothness!
 
 ![Browser rendering pipeline - 60fps](https://cdn.rawgit.com/vasanthk/Browser-Rendering-Optimization/master/imgs/60fps.png)  
 
+60fps = 16ms/frame, but you actually get only around 10-12ms to do all your work due to browser overhead.
+
 ## App Life Cycles (RAIL)
  * Response
  * Animations
