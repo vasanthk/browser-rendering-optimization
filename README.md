@@ -1,20 +1,26 @@
 # Browser Rendering Optimization
 Notes on browser rendering optimization and hitting 60fps smoothness!
 
+![Browser rendering pipeline - 60fps](https://cdn.rawgit.com/vasanthk/Browser-Rendering-Optimization/master/imgs/60fps.png)  
+
 ## App Life Cycles (RAIL)
  * Response
  * Animations
  * Idle
  * Load (XHR, Websockets, HTML imports etc.)
  
-### Actual Chronological Order
+![RAIL](https://cdn.rawgit.com/vasanthk/Browser-Rendering-Optimization/master/imgs/RAIL.png)
+ 
+#### Actual Chronological Order
 1. Load (~1 sec) Initial page load
 2. Idle (~ 50ms) Lazy load items
 3. Response (~100ms) On interaction, respond within 100ms
 4. Animations (~16ms) In reality we get ~12ms since the browser has some overhead
 
+![RAIL Time Table](https://cdn.rawgit.com/vasanthk/Browser-Rendering-Optimization/master/imgs/RAIL-Time-Table.jpg)
+
 ## What happens during style changes?
-### For example, during an opacity change or transform animation, only the composite is triggered.
+#### For example, during an opacity change or transform animation, only the composite is triggered.
 * The page isn't receiving any new HTML, so the DOM doesn't need to be built.
 * The page isn't receiving any new CSS, so the CSSOM doesn't need to be built.
 * The page isn't receiving any new HTML or CSS, so the Render Tree doesn't need to be touched.
@@ -37,6 +43,8 @@ Notes on browser rendering optimization and hitting 60fps smoothness!
 ## Webworkers
 * Webworkers provide an interface for spawning scripts to run in the background - in a totally different scope than the main window and also in separate thread.
 * Webworkers and the main thread can communicate with each other.
+
+![Web Worker](https://cdn.rawgit.com/vasanthk/Browser-Rendering-Optimization/master/imgs/Web-Worker.png)
 
 ## Styles and Layout (Recalc Styles)
 * The cost of recalculate styles scales linearly with the number of elements on the page.
