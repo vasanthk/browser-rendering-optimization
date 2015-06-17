@@ -1,5 +1,6 @@
 # Browser Rendering Optimization
 Notes on browser rendering optimization and hitting 60fps smoothness!
+Pull requests to add/update info, welcome :)
 
 ![Browser rendering pipeline - 60fps](https://cdn.rawgit.com/vasanthk/Browser-Rendering-Optimization/master/imgs/60fps.png)  
 
