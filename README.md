@@ -93,6 +93,7 @@ Unfortunately, lots of things. Among them some which are particularly relevant w
 * Manipulating the class attribute.
 * A script manipulating the DOM.
 * Calculating offsetWidth and offsetHeight.
+* Setting a property of the style attribute
 
 ## Compositing and Painting
 * Update Layer tree: Happens when Chrome's internal engine (Blink) figures out what layers are needed for the page. It looks at the styles of the elements and figures out what order everything should be in and how many layers it needs.
