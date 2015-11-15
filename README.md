@@ -28,10 +28,10 @@ If there is some motion on screen (such as scrolling, transitions, or animations
 ![RAIL](https://cdn.rawgit.com/vasanthk/Browser-Rendering-Optimization/master/imgs/RAIL.png)
  
 #### Actual Chronological Order
-1. Load (~1 sec) Initial page load
-2. Idle (~ 50ms) Lazy load items
-3. Response (~100ms) On interaction, respond within 100ms
-4. Animations (~16ms) In reality we get ~12ms since the browser has some overhead
+1. Load (~1 sec) Initial page load. Download and render your critical resources here.
+2. Idle (~ 50ms chunks) Do all non-essential work to ensure interactions that occur later on feel instantaneous. eg. lazy load items, do pre-animation calcs etc.
+3. Response (~100ms) On interaction, respond within 100ms.
+4. Animations (~16ms) In reality we get ~12ms since the browser has some overhead.
 
 ![RAIL Time Table](https://cdn.rawgit.com/vasanthk/Browser-Rendering-Optimization/master/imgs/RAIL-Time-Table.jpg)
 
