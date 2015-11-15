@@ -102,6 +102,9 @@ For the complete list check Paul Irish's [gist](https://gist.github.com/pauliris
 
 ## Compositing and Painting
 * Update Layer tree: Happens when Chrome's internal engine (Blink) figures out what layers are needed for the page. It looks at the styles of the elements and figures out what order everything should be in and how many layers it needs.
+* You can add elements of the page to it's own layer by using CSS:
+  * Conventional way - supported in all browsers: ```transform: translatez(o);```
+  * New way - Chrome/Firefox support/No IE-Edge:  ```will-change: transform```
 * Composite Layer: Is where the browser is putting the page together to center the screen.
 
 Thanks to [Paul Lewis](https://twitter.com/aerotwist) and [Cameron Pittman](https://twitter.com/cwpittman) for their course on [Udacity](https://www.udacity.com/course/browser-rendering-optimization--ud860), which presented deeper insights to this topic.
