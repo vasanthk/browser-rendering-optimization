@@ -49,6 +49,9 @@ If there is some motion on screen (such as scrolling, transitions, or animations
 
 ## Animation
 * 'requestAnimationFrame' is the goto tool for creating animation.
+  * Schedules the JavaScript to run at the earliest possible moment in each frame.
+  * The browser can optimize concurrent animations together into a single reflow and repaint cycle, leading to higher fidelity animation. For example, JS-based animations synchronized with CSS transitions or SVG SMIL. 
+  * Plus, if you’re running the animation loop in a tab that’s not visible, the browser won’t keep it running, which means less CPU, GPU, and memory usage, leading to much longer battery life.
 * Browser has to render frames at 60fps ie. 16ms/frame.
 	* Due to browser overhead, we get around 10ms, so JS has about 3ms time.
 * JavaScript -> Style -> Layout -> Painting -> Composite
