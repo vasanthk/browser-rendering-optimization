@@ -98,6 +98,8 @@ Unfortunately, lots of things. Among them some which are particularly relevant w
 * Calculating offsetWidth and offsetHeight.
 * Setting a property of the style attribute
 
+For the complete list check Paul Irish's [gist](https://gist.github.com/paulirish/5d52fb081b3570c81e3a)
+
 ## Compositing and Painting
 * Update Layer tree: Happens when Chrome's internal engine (Blink) figures out what layers are needed for the page. It looks at the styles of the elements and figures out what order everything should be in and how many layers it needs.
 * Composite Layer: Is where the browser is putting the page together to center the screen.
