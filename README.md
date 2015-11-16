@@ -11,9 +11,16 @@ There are six different tasks a browser performs to accomplish all this:
 4. Laying out elements on the page
 5. Painting the actual pixels of elements
 
-Modern browsers try to refresh the content on screen in sync with a device's refresh rate. 
-For most devices today, the screen will refresh 60 times a second, or 60Hz. 
-If there is some motion on screen (such as scrolling, transitions, or animations) a browser should create 60 frames per second to match the refresh rate.
+## Putting The User In The Center Of Performance (Key Numbers)
+
+ * 100 milliseconds
+    * Respond to a user action within this time window and they will feel like the result is immediate. Any longer and that connection between action and reaction breaks.
+
+ * 1 second
+    * Within this window, things feel part of a natural and continuous progression of tasks. Beyond it, the user will lose focus on the task they were performing. For most users on the web, loading a page or changing views represents a task.
+
+ * 16 milliseconds
+    * Given a screen that is updating 60 times per second, this window represents the time to get a single frame to the screen (Professor Math says 1000 ÷ 60 = ~16). People are exceptionally good at tracking motion, and they dislike it when their expectation of motion isn’t met, either through variable frame rates or periodic halting.
 
 ![Browser rendering pipeline - 60fps](https://cdn.rawgit.com/vasanthk/Browser-Rendering-Optimization/master/imgs/60fps.png)  
 
