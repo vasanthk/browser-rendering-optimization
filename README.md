@@ -11,7 +11,7 @@ There are six different tasks a browser performs to accomplish all this:
 4. Laying out elements on the page
 5. Painting the actual pixels of elements
 
-## Putting The User In The Center Of Performance
+## Putting the user in the center of performance
 * 100 milliseconds
   * Respond to a user action within this time window and they will feel like the result is immediate. Any longer and that connection between action and reaction breaks.
 * 1 second
@@ -113,3 +113,6 @@ For the complete list check Paul Irish's [gist](https://gist.github.com/pauliris
 * Composite Layer: Is where the browser is putting the page together to center the screen.
 
 Thanks to [Paul Lewis](https://twitter.com/aerotwist) and [Cameron Pittman](https://twitter.com/cwpittman) for their course on [Udacity](https://www.udacity.com/course/browser-rendering-optimization--ud860), which presented deeper insights to this topic.
+
+## Other Links:
+[Introducing RAIL: A User-Centric Model For Performance](http://www.smashingmagazine.com/2015/10/rail-user-centric-model-performance/)
