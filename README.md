@@ -71,7 +71,7 @@ There are six different tasks a browser performs to accomplish all this:
 ## Styles and Layout (Recalc Styles)
 * The cost of recalculate styles scales linearly with the number of elements on the page.
 * [BEM](https://css-tricks.com/bem-101/): Block Element Modifier: Use this style for CSS selectors.
-* Class matching if often the fastest selector in modern browsers.
+* Class matching is often the fastest selector in modern browsers.
 * Reducing 'Recalculate Styles' time.
 	* Reduce affected elements (fewer changes to render tree)
 	* Reduce selector complexity (fewer tags & class names to select elements)
