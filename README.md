@@ -117,4 +117,4 @@ Thanks to [Paul Lewis](https://twitter.com/aerotwist) and [Cameron Pittman](http
 ## Other Links:
 [Introducing RAIL: A User-Centric Model For Performance](http://www.smashingmagazine.com/2015/10/rail-user-centric-model-performance/)
 
-[The RAIl Performance model](https://developers.google.com/web/tools/chrome-devtools/profile/evaluate-performance/rail?hl=en)
+[The RAIL Performance model](https://developers.google.com/web/tools/chrome-devtools/profile/evaluate-performance/rail?hl=en)
