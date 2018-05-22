@@ -11,6 +11,8 @@ There are six different tasks a browser performs to accomplish all this:
 4. Laying out elements on the page
 5. Painting the actual pixels of elements
 
+Sometimes you may hear the term "rasterize" used in conjunction with paint. This is because painting is actually two tasks: 1) creating a list of draw calls, and 2) filling in the pixels. The latter is called "rasterization" and so whenever you see paint records in DevTools, you should think of it as including rasterization.
+
 ## Putting the user in the center of performance
 * 100 milliseconds
   * Respond to a user action within this time window and they will feel like the result is immediate. Any longer and that connection between action and reaction breaks.
